@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TEX~MEX Beers survey form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <form id="survey-form">
+    <div id="beginning">
+      <h1 id="title">TEX~MEX Beers survey form</h1>
+      <p id="description">Thank you for take the time to help us to know your preferences.</p>
+    </div>
+    <div id="fill">
+      <label for="name" id="name-label">Name: </label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" size="40" required> <br>
+      <label for="email" id="email-label">Email: </label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" size="30" required><br></br>
+      <label for="number" id="number-label"><em>Age (you have to be between 21 and 200 years old):</em> </label>
+      <input type="number" id="number" name="number" placeholder="Age" min="21" max="200" requiered><br>
+
+      <h3>Have you ever tasted TEX~MEX Beers?</h3>
+      <input type="radio" id="yes" name="tasted" value="yes">
+      <label for="yes">YES</label><br>
+      <input type="radio" id="no" name="tasted" value="no">
+      <label for="no">NO</label>
+
+      <label for="dropdown">
+        <h3>Do you prefer your TEX~MEX Beer in: </h3>
+      </label>
+      <select id="dropdown" name="dropdown">
+        <option value="cans">Cans</option>
+        <option value="bottles">Bottles</option>
+        <option value="no preference">No preference</option>
+      </select>
+
+      <h3>If you like TEX~MEX Beers, what is your favorite style?</h3>
+      <p>You can choose more than one option:</p>
+      <label for="porter">
+        <input id="porter" type="checkbox" name="style" value="Porter">Porter</label>&nbsp&nbsp
+      <label for="wheat">
+        <input id="wheat" type="checkbox" name="style" value="Wheat">Wheat</label>&nbsp&nbsp
+      <label for="stout">
+        <input id="stout" type="checkbox" name="style" value="Stout">Stout</label><br>
+      <label for="amber">
+        <input id="amber" type="checkbox" name="style" value="Amber">Amber</label>&nbsp&nbsp
+      <label for="bock">
+        <input id="bock" type="checkbox" name="style" value="Bock">Bock</label>&nbsp&nbsp
+      <label for="pilsner">
+        <input id="pilsner" type="checkbox" name="style" value="Pilsner">Pilsner</label><br>
+      <label for="lager">
+        <input id="lager" type="checkbox" name="style" value="Lager">Lager</label>&nbsp&nbsp
+      <label for="dark">
+        <input id="dark" type="checkbox" name="style" value="Dark">Dark</label>&nbsp&nbsp
+      <label for="bitte">
+        <input id="bitter" type="checkbox" name="style" value="Bitter">Bitter</label>
+
+      <h3>Would you recommend TEX~MEX Beers to a friend?</h3>
+      <input type="radio" id="sure" name="recomment" value="sure">
+      <label for="sure">Sure</label><br>
+      <input type="radio" id="maybe" name="recomment" value="maybe">
+      <label for="maybe">Maybe</label><br>
+      <input type="radio" id="not sure" name="recomment" value="not sure">
+      <label for="not sure">Not sure</label><br>
+      <input type="radio" id="definetily not" name="recomment" value="definitely not">
+      <label for="definitely not">Definetely not</label><br>
+
+      <h3 id="comments">Any comments or suggestions?</h3><br>
+      <textarea id="textarea" name="message" rows="10" cols="60" maxlength="200">
+   Enter your text here...(max 200 characters)
+  </textarea><br>
+
+      <input id="submit" type="submit" value="Submit">
+    </div>
+  </form>
+
+  <p id="beersimg">Photo by Stanislav Ivanitskiy on Unsplash</p>
+
+</body>
